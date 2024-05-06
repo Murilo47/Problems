@@ -1,0 +1,48 @@
+calendar_1 = [[12:00, 13:00], [15:00, 16:00]]
+
+dailybound_1 = [8:00, 18:00]
+
+meeting_duration = 45 min
+
+
+Sample input:
+[['9:00', '10:30'], ['12:00', '13:00'], ['16:00', '18:00']]
+['9:00', '20:00]
+
+[['10:00', '11:30'], ['12:30', '14:30'], ['14:30', '1:00'], ['16:00', '17:00']]
+['10:00', '18:30']
+
+30
+
+Sample output: [['11:30', '12:00], ['15:00', '16:00], ['18:00', '18:30']]
+
+
+//transform str -> float => [str, str] -> (float, float)
+//dailybounds => trasnform into one 
+//compare the first meeting slots of both => which is first => check if i have time before them 
+
+//3 functions:
+    //1 -> compare which comes first/after
+    //2 -> calculate time 
+    //3 -> check if available
+
+//compare daily bounds => which is the latest
+//compare the beggining of the first meetings => which is earliest
+//check if available
+
+
+//time begin as the latest upper dailybound 
+//search the next unavailable time 
+//check if there's time for a meeting -> if so add to an array
+
+//changetime to next available of the first unvailable 
+
+
+//creating a "global" daily bound
+//create a list with all time bounds of appointments 
+//func to check availability
+//go through the list of time bounds and check availability of the people
+//if both available => put in the list of available times
+
+
+
